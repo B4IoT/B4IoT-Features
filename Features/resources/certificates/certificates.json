@@ -1,0 +1,13 @@
+{
+  "feature":  "resource",
+      "name": "Certificates",
+      "description": "install certificates on device needed for some other services",
+      "dependencies":[
+        {"name":"openSSL"}
+      ],
+      "scripts":
+      {
+          "install": "resources/certificates/addCertificates.sh"
+      }
+
+}

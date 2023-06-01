@@ -1,0 +1,10 @@
+{
+  "feature": "resource",
+      "name": "add users",
+      "display_name": "Add Other Users",
+      "description": "Adds basic users to the firmware (without password)",
+      "scripts": {
+
+      "install":"resources/users/addUsers.sh"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "feature":"config",    
+        "name": "SSHWC",
+        "display_name": "SSH with a weak cipher",
+        "description": "Weak cipher used to secure SSH",
+        "dependencies":[
+            { "name":"add users" },
+            { "service":"openssh" }
+        ],
+        "vulnerabilityType":"misconfiguration",
+        "vulnerabilities":["weak cipher"],
+        "CWEs":["CWE-276","CWE-287"],
+        "location":"/etc/ssh/sshd_config",
+        "scripts":{
+            "install": "misconfigurations/ssh/wc/addWC.sh"
+        },
+        "family":"SSH"
+}

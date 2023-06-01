@@ -1,0 +1,15 @@
+{
+  "feature": "service",
+      "name": "vsftp",
+      "display_name": "VSFTP Service",
+      "description": "installs the vsftp service",
+      "port":"21",
+      "family": "FTP",
+      "dependencies": [
+          {"name":"openrc"}
+      ],
+      "scripts": {
+
+      "install":"resources/ftp/addFtp.sh"
+  }
+}

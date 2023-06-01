@@ -1,0 +1,24 @@
+{
+    "feature": "vulnerability",
+    "name": "javaInterfaceCI",
+    "vulnerabilityType":"servlet",
+    "language":"Java",
+    "family":"Java",
+    "display_name": "java command injection, interface",
+    "description": "Adding java command injection, that communicates with the ouside world over services",
+    "dependencies": [
+        {
+            "feature":"platform",
+            "architecture":"x86|ppc64le|s390x|arm64v8"
+        }
+    ],        
+    "vulnerabilities":["Command injection" ],
+    "location":"/opt/dvd/services/vulns/java/CommandInjection",
+    "CWEs":["CWE-78","CWE-77","CWE-20"],
+    "scripts": 
+      {
+        "install": "vulnerabilities/javaInterface/CommandInjection/addJavaCI.sh"
+      }
+    
+  }
+

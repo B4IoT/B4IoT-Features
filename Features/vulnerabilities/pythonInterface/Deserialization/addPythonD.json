@@ -1,0 +1,17 @@
+{
+    "feature": "vulnerability",
+    "name": "pythonInterfaceD",
+    "vulnerabilityType":"servlet",
+    "language":"python",
+    "family":"python",
+    "display_name": "python object deserialization, interface",
+    "description": "Adding python object deserialization that communicates with the ouside world over services",
+    "dependencies": [],        
+    "vulnerabilities":["Object deserialisation"],
+    "location":"/opt/dvd/services/vulns/python/Deserialization.py",
+    "CWEs":["CWE-502","CWE-20"],    
+    "scripts":  {
+        "install": "vulnerabilities/pythonInterface/Deserialization/addPythonD.sh"
+      }
+  }
+

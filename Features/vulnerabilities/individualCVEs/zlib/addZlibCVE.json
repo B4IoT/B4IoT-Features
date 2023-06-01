@@ -1,0 +1,13 @@
+{
+    "feature":"vulnerability",
+    "name": "CVE-2021-43521",
+    "vulnerabilityType":"CVE",
+    "family":"CVE",
+    "description": "adding Zlib 1.2.15 containing CVE-2021-43521. \n other CVE's are also possible, but are not tested and are unsure.",
+    "dependencies": [],
+    "vulnerabilities":["CVE-2021-43521"],
+    "CWEs":[""],
+    "scripts": {
+        "install": "vulnerabilities/individualCVEs/zlib/addZlibCVE.sh"
+    }
+}

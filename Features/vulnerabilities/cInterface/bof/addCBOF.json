@@ -1,0 +1,22 @@
+{
+  "feature":"vulnerability",
+  "name": "cInterfaceBOF", 
+  "display_name": "c buffer overflow, interface",    
+  "vulnerabilityType": "servlet",
+  "language":"c",
+  "family": "c",
+  "description": "Adding binaries written in c that contains buffer overflow that can communciate with certain protocols",
+  "dependencies": [
+      {
+          "feature":"platform",
+          "architecture":"armv7|x86"
+      }
+  ],        
+  "vulnerabilities":["buffer overflow"],
+  "location":"/opt/dvd/services/vulns/c/BufferOverflow",
+  "CWEs":["CWE-787","CWE-121","CWE-20","CWE-119"],
+  "scripts": 
+    {
+      "install": "vulnerabilities/cInterface/bof/addCBOF.sh"
+    }
+}

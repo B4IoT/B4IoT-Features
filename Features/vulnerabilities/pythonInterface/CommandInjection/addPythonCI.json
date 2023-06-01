@@ -1,0 +1,17 @@
+{
+    "feature": "vulnerability",
+    "name": "pythonInterfaceCI",
+    "vulnerabilityType":"servlet",
+    "language":"python",
+    "family":"python",
+    "display_name": "python command injection, interface",
+    "description": "Adding python command injection that communicates with the ouside world over services",
+    "dependencies": [],        
+    "vulnerabilities":["Command injection"],
+    "location":"/opt/dvd/services/vulns/python/CommandInjection.py",
+    "CWEs":["CWE-77","CWE-78","CWE-20"],
+    "scripts":  {
+        "install": "vulnerabilities/pythonInterface/CommandInjection/addPythonCI.sh"
+      }
+  }
+  

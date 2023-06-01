@@ -1,0 +1,16 @@
+{
+  "feature": "service",
+      "name": "openssh",
+      "service":"openssh",
+      "display_name": "OpenSSH service",
+      "description": "installs a SSH service ",
+      "family": "SSH",
+      "port":"22",
+      "dependencies": [
+          { "name":"openrc" }
+      ],
+      "scripts": {
+
+      "install":"resources/ssh/addSSH.sh"
+  }
+}

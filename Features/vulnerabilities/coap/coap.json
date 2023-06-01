@@ -1,0 +1,21 @@
+{
+  "feature":"interface",
+  "name": "coap",
+  "display_name": "CoAP interface",
+  "vulnerabilityType":"interface",
+  "language":"python",
+  "family":"coap",
+  "description": "Installs a modular coap server running as root. Possible packet amplification. Does not inherently have vulnerabilities, but serves any vulnerability with the <interface> property",
+  "dependencies": [
+    { "name": "Python3"},
+    { "name": "cron" }
+  ],     
+  "port": "5683",   
+  "vulnerabilities":["Possible packet amplification","Execution with unnecessary privileges"],
+  "CWEs":["CWE-406","CWE-250"],
+  "location":"/opt/dvd/services/coap/server.py",
+  "scripts":
+    {
+      "install": "vulnerabilities/coap/addCoap.sh"
+    }
+}

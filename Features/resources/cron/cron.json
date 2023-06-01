@@ -1,0 +1,15 @@
+{
+  "feature": "resource",
+      "name": "cron",
+      "display_name": "Cron Service",
+      "description": "installs the cron service whitout any jobs",
+      "type": "scheduler",
+      "family": "cron",
+      "dependencies": [
+          {"name":"openrc"}
+      ],
+      "scripts": {
+
+      "install":"resources/cron/addCron.sh"
+  }
+}

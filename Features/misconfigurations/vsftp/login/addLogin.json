@@ -1,0 +1,19 @@
+{
+    "feature": "config",
+           "name": "vsftpLOGIN",
+           "display_name": "Misconfigured VSFTP with anonymous login permitted",
+           "description": "Anonymous login is allowed in the VSFTP server, in combination with other wrong configurations it can be considered a vulnerability",
+           "dependencies": [
+               {
+                   "name": "vsftp"
+               }
+           ],
+           "scripts": {
+               "install": "misconfigurations/vsftp/login/addLogin.sh"
+           },
+           "vulnerabilities":["Allow anonymous FTP"],
+           "CWEs":["CWE-276"],
+           "vulnerabilityType":"misconfiguration",
+           "location":"/etc/vsftpd/vsftp.conf",
+           "family":"FTP"
+}

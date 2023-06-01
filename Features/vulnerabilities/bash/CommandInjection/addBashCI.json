@@ -1,0 +1,17 @@
+{
+  "feature":"vulnerability",
+  "name": "bashCI",
+  "display_name":"bash Command Injection",
+  "description": "Adding scripts written in in the language bash that contains certain vulnerabilities",
+  "language":"bash",
+  "vulnerabilities":["Command injection"],
+  "CWEs":["CWE-78","CWE-77"],
+  "location":"/opt/dvd/code/bash/",
+  "family":"bash",
+  "vulnerabilityType":"language vulnerabilities",
+  "scripts": 
+    {
+      "install": "vulnerabilities/bash/CommandInjection/addBashCI.sh"
+    }
+  
+}

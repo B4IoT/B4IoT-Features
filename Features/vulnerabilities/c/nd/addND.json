@@ -1,0 +1,22 @@
+{
+  "feature": "vulnerability",
+  "name": "cND",    
+  "display_name": "c Null pointer dereference",    
+  "vulnerabilityType": "language vulnerabilities",
+  "family": "c",
+  "language":"c",
+  "description": "Adding binaries written in c that contains a null pointer dereference",
+  "dependencies": [
+      {
+          "feature":"platform",
+          "architecture":"armv7|x86"
+      }
+  ],        
+  "vulnerabilities":["Null pointer dereference"],
+  "location":"/opt/dvd/code/c/NullDeref",
+  "CWEs":["CWE-476"],   
+  "scripts":
+    {
+      "install": "vulnerabilities/c/nd/addND.sh"
+    }
+}

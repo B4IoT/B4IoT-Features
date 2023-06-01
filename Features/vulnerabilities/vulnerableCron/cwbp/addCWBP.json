@@ -1,0 +1,27 @@
+{
+  "feature": "vulnerability",
+  "name": "cronjobCWBP",
+  "display_name": "Cronjob command injection",
+  "vulnerabilityType": "scheduler",
+  "family": "cron",
+  "description": "adding cronjobs to cron that are vulnerable, one with a wildcard injections, and another with bad permissions",
+  "dependencies": [
+      {
+          "name": "cron"
+      }
+  ],
+  "vulnerabilities": [
+      "Command injection in file executed as root by cron"
+  ],
+  "location": "/etc/crontab/",
+  "CWEs": [
+      "CWE-78",
+      "CWE-77",
+      "CWE-269",
+      "CWE-732",
+      "CWE-862"
+  ],
+  "scripts": {
+      "install": "vulnerabilities/vulnerableCron/cwbp/addCWBP.sh"
+  }
+}

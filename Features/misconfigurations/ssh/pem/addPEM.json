@@ -1,0 +1,26 @@
+{
+    "feature": "config",
+    "name": "SSHPEM",
+    "display_name": "SSH with misconfigured permissions",
+    "description": "SSH with key that gets leaked in the firmware",
+    "dependencies": [
+        {
+            "name": "add users"
+        },
+        { "service":"openssh" }
+
+    ],
+    "vulnerabilityType": "misconfiguration",
+    "vulnerabilities": [
+        "Permitted empty passwords"
+    ],
+    "CWEs": [
+        "CWE-276",
+        "CWE-287"
+    ],
+    "location": "/etc/ssh/sshd_config",
+    "scripts": {
+        "install": "misconfigurations/ssh/pem/addPEM.sh"
+    },
+    "family": "SSH"
+}

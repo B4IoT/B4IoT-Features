@@ -1,0 +1,17 @@
+{
+    "feature": "vulnerability",
+    "name": "pythonInterfacePT",
+    "vulnerabilityType":"servlet",
+    "family":"python",
+    "language":"python",
+    "display_name": "python Path traversal, interface",
+    "description": "Adding python Path traversal that communicates with the ouside world over services",
+    "dependencies": [],        
+    "vulnerabilities":["Path traversal"],
+    "location":"/opt/dvd/services/vulns/python/PathTraversal.py",
+    "CWEs":["CWE-22","CWE-20"],    
+    "scripts":  {
+        "install": "vulnerabilities/pythonInterface/PathTraversal/addPythonPT.sh"
+      }
+  }
+  

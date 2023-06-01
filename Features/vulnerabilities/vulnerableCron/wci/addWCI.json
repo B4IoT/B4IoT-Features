@@ -1,0 +1,25 @@
+{
+  "feature": "vulnerability",
+  "name": "cronjobWCI",
+  "display_name": "Cronjob wildcard injection",
+  "vulnerabilityType": "scheduler",
+  "family": "cron",
+  "description": "adding cronjobs to cron that are vulnerable, one with a wildcard injections",
+  "dependencies": [
+      {
+          "name": "cron"
+      },
+      {"name":"add users"}
+  ],
+  "vulnerabilities": [
+      "wildcard injection"
+  ],
+  "location": "/etc/crontab/",
+  "CWEs": [
+      "CWE-269",
+      "CWE-732"
+  ],
+  "scripts": {
+      "install": "vulnerabilities/vulnerableCron/wci/addWCI.sh"
+  }
+}

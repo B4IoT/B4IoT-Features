@@ -1,0 +1,13 @@
+{
+  "feature": "resource",
+      "name": "openrc",
+      "display_name": "openrc init system",
+      "description": "installs and initializes the openrc init system",
+      "type": "init-system",
+      "family": "init-system",
+      "dependencies": [],
+      "scripts": {
+
+      "install":"resources/openrc/addOpenrc.sh"
+  }
+}

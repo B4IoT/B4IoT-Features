@@ -1,0 +1,28 @@
+{
+  "feature": "vulnerability",
+  "name": "infoleak in database file",
+  "vulnerabilityType": "infoleak",
+  "family": "infoleak",
+  "description": "Leaking usernames, password and password hashes in database",
+  "dependencies": [
+      {
+          "name": "add users"
+      },
+      {
+          "name": "hardcoded passwords"
+      }
+  ],
+  "vulnerabilities": [
+      "Leaking user password",
+      "Leaking root hash"
+  ],
+  "CWEs": [
+      "CWE-522",
+      "CWE-200",
+      "CWE-798"
+  ],
+  "location": "/home/manager/login.db",
+  "scripts": {
+      "install": "vulnerabilities/infoleak/db/addDb.sh"
+  }
+}

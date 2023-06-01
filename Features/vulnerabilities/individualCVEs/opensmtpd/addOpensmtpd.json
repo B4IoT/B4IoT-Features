@@ -1,0 +1,13 @@
+{
+    "feature":"vulnerability",
+    "name": "CVE-2020-8794",
+    "vulnerabilityType":"CVE",
+    "family":"CVE",
+    "description": "adding Opensmtpd version 6.0.3p1-r3 which is vulnerable to CVE-2020-8794. \n other CVE's are also possible, but are not tested and are unsure.",
+    "dependencies": [],
+    "vulnerabilities":["CVE-2020-8794"],
+    "CWEs":[""],
+    "scripts": {
+        "install": "vulnerabilities/individualCVEs/opensmtpd/addOpenSmtpd.sh"
+    }
+}

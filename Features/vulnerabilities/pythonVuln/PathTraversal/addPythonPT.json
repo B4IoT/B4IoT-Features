@@ -1,0 +1,17 @@
+{
+    "feature":"vulnerability",
+    "name": "pythonPT",
+    "vulnerabilityType": "language vulnerabilities",
+    "language":"python",
+    "family": "python",
+    "display_name": "python Path traversal",
+    "description": "Adding python Path traversal",
+    "dependencies": [],        
+    "vulnerabilities":["Path traversal"],
+    "location":"/opt/dvd/code/python/PathTraversal.py",
+    "CWEs":["CWE-22","CWE-20"],
+    "scripts":  {
+        "install": "vulnerabilities/pythonVuln/PathTraversal/addPythonPT.sh"
+      }
+
+  }

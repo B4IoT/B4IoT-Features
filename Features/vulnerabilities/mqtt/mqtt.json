@@ -1,0 +1,20 @@
+{
+  "feature":"interface",  
+  "name": "mqtt",
+  "display_name":"MQTT interface",
+  "language":"python",
+  "family":"mqtt",
+  "description": "install a modular mqtt server and a broker running as root. Does not inherently have vulnerabilities, but serves any vulnerability with the <interface> property",
+  "dependencies": [
+    { "name": "Python3"},
+    { "name": "cron" },
+    { "name": "openrc"}
+  ],     
+  "port": "1883",   
+  "CWEs":["CWE-250"],
+  "location":"/opt/dvd/services/mqtt/server.py/",
+  "scripts": 
+    {
+      "install": "vulnerabilities/mqtt/addMqtt.sh"
+    }
+}

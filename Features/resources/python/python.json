@@ -1,0 +1,13 @@
+{
+  "feature": "resource",
+      "name": "Python3",
+      "display_name": "Python3",
+      "description": "installs python3 and pip3 ",
+      "type": "language",
+      "family": "python",
+      "dependencies": [],
+      "scripts": {
+
+      "install":"resources/python/addPython.sh"
+  }
+}

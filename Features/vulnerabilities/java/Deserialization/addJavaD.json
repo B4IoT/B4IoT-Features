@@ -1,0 +1,22 @@
+{
+    "feature":"vulnerability",
+    "name": "javaD",
+    "vulnerabilityType":"language vulnerabilities",
+    "family":"Java",
+    "language":"Java",
+    "display_name": "Java object deserialisation",
+    "description": "Adding java object deserialisation",
+    "dependencies": [
+        {
+            "feature":"platform",
+            "architecture":"x86|ppc64le|s390x|arm64v8"
+        }
+    ],        
+    "vulnerabilities":["Object deserialisation"],
+    "location":"/opt/dvd/code/java/Deserialization.jar",
+    "CWEs":["CWE-502","CWE-20"],
+    "scripts": 
+      {
+        "install": "vulnerabilities/java/Deserialization/addJavaD.sh"
+      }
+}

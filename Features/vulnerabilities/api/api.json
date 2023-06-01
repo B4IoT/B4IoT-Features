@@ -1,0 +1,20 @@
+{
+  "feature":"interface",
+  "name": "REST interface",
+  "display_name":"REST interface",
+  "language":"python",
+  "description": "Installs a api server running as root. Does not inherently have vulnerabilities, but serves any vulnerability with the <interface> property",
+  "dependencies": [
+    { "name": "Python3"},
+    { "name": "cron" }
+  ],
+  "port":"5000",
+  "type":"interface",
+  "family":"rest",     
+  "CWEs":["CWE-250"],
+  "location":"/opt/dvd/services/api/server.py",
+  "scripts": 
+    {
+      "install": "vulnerabilities/api/addApi.sh"
+    }
+}

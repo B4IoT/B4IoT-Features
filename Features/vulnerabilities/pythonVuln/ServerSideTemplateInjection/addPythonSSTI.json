@@ -1,0 +1,17 @@
+{
+    "feature":"vulnerability",
+    "name": "pythonSSTI",
+    "vulnerabilityType": "language vulnerabilities",
+    "language":"python",
+    "family": "python",
+    "display_name": "python server side template injection",
+    "description": "Adding python server side template injection",
+    "dependencies": [],        
+    "vulnerabilities":["Server side template injection"],
+    "location":"/opt/dvd/code/python/SSTI.py",
+    "CWEs":["CWE-1336","CWE-20"],
+    "scripts":  {
+        "install": "vulnerabilities/pythonVuln/ServerSideTemplateInjection/addPythonSSTI.sh"
+      }
+
+  }

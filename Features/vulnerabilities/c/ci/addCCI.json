@@ -1,0 +1,22 @@
+{
+  "feature": "vulnerability",
+  "name": "cCI",    
+  "display_name": "c command injection",    
+  "vulnerabilityType": "language vulnerabilities",
+  "family": "c",
+  "description": "Adding binaries written in c that contains a command injection",
+  "dependencies": [
+      {
+          "feature":"platform",
+          "architecture":"armv7|x86"
+      }
+  ],        
+  "language":"c",
+  "vulnerabilities":["Command injection"],
+  "location":"/opt/dvd/code/c/CommandInjection",
+  "CWEs":["CWE-77","CWE-78","CWE-20"],    
+  "scripts": 
+    {
+      "install": "vulnerabilities/c/ci/addCCI.sh"
+    }
+}

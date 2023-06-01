@@ -1,0 +1,22 @@
+{
+  "feature":"vulnerability",
+  "name": "cInterfaceCI",  
+  "display_name": "c command injection, interface",    
+  "vulnerabilityType": "servlet",
+  "family": "c",
+  "language":"c",
+  "description": "Adding binaries written in c that contains command injection that can communciate with certain protocols",
+  "dependencies": [
+      {
+          "feature":"platform",
+          "architecture":"armv7|x86"
+      }
+  ],        
+  "vulnerabilities":["Command injection"],
+  "location":"/opt/dvd/services/vulns/c/CommandInjection",
+  "CWEs":["CWE-77","CWE-78","CWE-20"],
+  "scripts": 
+    {
+      "install": "vulnerabilities/cInterface/ci/addCCI.sh"
+    }
+  }

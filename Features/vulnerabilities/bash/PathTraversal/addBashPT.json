@@ -1,0 +1,17 @@
+{
+  "feature":"vulnerability",
+  "name": "bashPT",
+  "display_name":"bash Path Traversal",
+  "description": "Adding scripts written in in the language bash that contains Path traversal vulnerabilities",
+  "language":"bash",
+  "vulnerabilities":["Path traversal"],
+  "CWEs":["CWE-22"],
+  "vulnerabilityType":"language vulnerabilities",
+  "family":"bash",
+  "location":"/opt/dvd/code/bash/",
+  "scripts": 
+    {
+      "install": "vulnerabilities/bash/PathTraversal/addBashPT.sh"
+    }
+  
+}

@@ -1,0 +1,24 @@
+{
+    "feature": "vulnerability",
+    "name": "javaInterfaceSQLI",
+    "vulnerabilityType":"servlet",
+    "language":"Java",
+    "family":"Java",
+    "display_name": "java SQL injection, interface",
+    "description": "Adding java SQL injection, that communicates with the ouside world over services",
+    "dependencies": [
+        {
+            "feature":"platform",
+            "architecture":"x86|ppc64le|s390x|arm64v8"
+        }
+    ],        
+    "vulnerabilities":["SQL injection"],
+    "location":"/opt/dvd/services/vulns/java/SQLInjection.jar",
+    "CWEs":["CWE-89","CWE-20","CWE-287"],    
+    "scripts": 
+      {
+        "install": "vulnerabilities/javaInterface/SQLInjection/addJavaSQLI.sh"
+      }
+    
+}
+

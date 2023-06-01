@@ -1,0 +1,23 @@
+{
+    "feature":"vulnerability",
+    "name": "javaSQLI",
+    "vulnerabilityType":"language vulnerabilities",
+    "family":"Java",
+    "language":"Java",
+    "display_name": "Java SQL injection",
+    "description": "Adding java SQL injection",
+    "dependencies": [
+        {
+            "feature":"platform",
+            "architecture":"x86|ppc64le|s390x|arm64v8"
+        }
+    ],        
+    "vulnerabilities":["SQL injection"],
+    "location":"/opt/dvd/code/java/SQLInjection.jar",
+    "CWEs":["CWE-89","CWE-20","CWE-287"],
+    "scripts": 
+      {
+        "install": "vulnerabilities/java/SQLInjection/addJavaSQLI.sh"
+      }
+}
+

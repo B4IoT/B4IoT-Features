@@ -1,0 +1,20 @@
+{
+  "feature": "server",
+      "name": "REST service",
+      "display_name": "REST server with mutual authentication",
+      "description": "installs a REST service ",
+      "family": "rest",
+      "language":"python",
+      "port":"8443",
+      "dependencies": [
+          { "name":"cron" },
+          { "name":"Python3"},
+          { "name":"Certificates"}
+      ],
+      "scripts": {
+
+      "install":"resources/rest/addRest.sh"
+  },
+  "CWEs":["CWE-295"],
+  "location":"/opt/dvd/services/rest/server.py"
+}

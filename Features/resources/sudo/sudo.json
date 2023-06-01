@@ -1,0 +1,12 @@
+{
+  "feature": "resource",
+      "name": "sudo",
+      "display_name": "Sudo",
+      "description": "installs the sudo binaries",
+      "type": "authorization",
+      "family":"SUDO",
+      "scripts": {
+
+      "install":"resources/sudo/addSudo.sh"
+  }
+}

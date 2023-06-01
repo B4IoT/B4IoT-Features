@@ -1,0 +1,19 @@
+{
+  "feature":"server",
+  "name": "vulnerable http server",
+  "vulnerabilityType":"web vulnerabilities",
+  "family":"HTTP",
+  "description": "Installing http server with multiple vulnerabilities: SQL injection, XSS, CSRF and a information leak",
+  "dependencies": [
+    { "name": "Python3"},
+    { "name": "cron"}
+  ],        
+    "port": ["80", "443"], 
+    "vulnerabilities":["SQL injection", "XSS", "CSRF" , "information leak"],
+    "CWEs":["CWE-89","CWE-287","CWE-312","CWE-250"],
+    "location":"/opt/dvd/services/http/",
+    "scripts": 
+    {
+      "install": "vulnerabilities/http/addHttp.sh"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "feature": "resource",
+        "name": "openSSL",
+        "display_name": "OpenSSL service",
+        "description": "installs SSL service ",
+        "family": "SSL",
+        "scripts": {
+        "install":"resources/openSSL/addSSL.sh"
+    }
+  }

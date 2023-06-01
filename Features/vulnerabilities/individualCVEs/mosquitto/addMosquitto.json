@@ -1,0 +1,13 @@
+{
+    "feature":"vulnerability",
+    "name": "CVE-2021-34431",
+    "vulnerabilityType":"CVE",
+    "family":"CVE",
+    "description": "adding Mosquitto version 1.6.3-r0, that has the CVE-2021-34431. \n other CVE's are also possible, but are not tested and are unsure.",
+    "dependencies": [],
+    "vulnerabilities":["CVE-2021-34431"],
+    "CWEs":[""],
+    "scripts": {
+        "install": "vulnerabilities/individualCVEs/mosquitto/addMosquitto.sh"
+    }
+}

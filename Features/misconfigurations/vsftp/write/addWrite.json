@@ -1,0 +1,19 @@
+{
+    "feature": "config",
+           "name": "vsftpWRITE",
+           "display_name": "Misconfigured VSFTP with write permissions enabled ",
+           "description": "Write permissions are enabled in the VSFTP server, in combination with an anonymous login and the wrong permissions it is considered a vulnerability",
+           "dependencies": [
+               {
+                   "name": "vsftp"
+               }
+           ],
+           "scripts": {
+               "install": "misconfigurations/vsftp/write/addWrite.sh"
+           },
+           "vulnerabilities":["write enabled"],
+           "CWEs":["CWE-434","CWE-287","CWE-276"],
+           "location":"/etc/vsftpd/vsftp.conf",
+           "family":"FTP",
+           "vulnerabilityType":"misconfiguration"
+}

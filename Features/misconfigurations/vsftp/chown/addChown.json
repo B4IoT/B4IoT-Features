@@ -1,0 +1,19 @@
+{
+    "feature": "config",
+           "name": "vsftpCHOWN",
+           "display_name": "Misconfigured VSFTP",
+           "description": "Bad CHOWN permissions in the VSFTP service",
+           "dependencies": [
+               {
+                   "name": "vsftp"
+               }
+           ],
+           "scripts": {
+               "install": "misconfigurations/vsftp/chown/addChown.sh"
+           },
+           "vulnerabilityType":"misconfiguration",
+           "vulnerabilities":["bad chown permissions"],
+           "CWEs":["CWE-276"],
+           "location":"/etc/vsftpd/vsftp.conf",
+           "family":"FTP"
+}

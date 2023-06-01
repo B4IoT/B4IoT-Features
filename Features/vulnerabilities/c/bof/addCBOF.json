@@ -1,0 +1,22 @@
+{
+  "feature": "vulnerability",
+  "name": "cBOF",    
+  "display_name": "c buffer overflow",    
+  "vulnerabilityType": "language vulnerabilities",
+  "language":"c",
+  "family": "c",
+  "description": "Adding binaries written in c that contains a buffer overflow",
+  "dependencies": [
+      {
+          "feature":"platform",
+          "architecture":"armv7|x86"
+      }
+  ],        
+  "vulnerabilities":["buffer overflow"],
+  "location":"/opt/dvd/code/c/BufferOverflow",
+  "CWEs":["CWE-787","CWE-121","CWE-20","CWE-119"],
+  "scripts": 
+    {
+      "install": "vulnerabilities/c/bof/addCBOF.sh"
+    }
+}
